@@ -11,11 +11,13 @@ Kaio Fabio - 20182BSI0485<br>
 
 
 ### 2	Escolha da base de dados e explicação sobre informações relacionadas <br>
-a) Escolher base de dados com o mínimo de registros solicitado, definição de nome para o projeto a ser executado, explicação do assunto relacionado aos dados e demais informações relativas a base em questão <br>
+Base escolhida do Site Kaggle.
+Brazilian E-Commerce Public Dataset by Olist -URL https://www.kaggle.com/olistbr/brazilian-ecommerce<br>
 
 ### 3 Fast Imersion Canvas <br>
 Inclusão do Fast Imersion Canvas
 <br>
+
 <br>
 ### 4 Fast Modelling Canvas
 <br>
