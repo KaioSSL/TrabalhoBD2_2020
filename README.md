@@ -16,6 +16,7 @@ Brazilian E-Commerce Public Dataset by Olist -URL https://www.kaggle.com/olistbr
 
 ### 3 Fast Imersion Canvas <br>
 Inclusão do Fast Imersion Canvas
+![texto](http://https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/Fast%20Immersion%20Canvas%20-%20E-commerce%20Brazil.png)
 <br>
 
 <br>
