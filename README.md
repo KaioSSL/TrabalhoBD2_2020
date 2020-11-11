@@ -15,39 +15,36 @@ Base escolhida do Site Kaggle.
 Brazilian E-Commerce Public Dataset by Olist -URL https://www.kaggle.com/olistbr/brazilian-ecommerce<br>
 
 ### 3 Fast Imersion Canvas <br>
-Inclusão do Fast Imersion Canvas
 ![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/Fast%20Immersion%20Canvas%20-%20E-commerce%20Brazil.png)
 <br>
 
 <br>
 ### 4 Fast Modelling Canvas
 <br>
-Inclusão do Fast Modelling Canvas
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/AR_03b%20-%20Fast%20Modelling%20Canvas_AL.png)
 <br>
 <br>
 
 ### 5 Fast EDA Canvas
 <br>
-Inclusão do Fast EDA Canvas + Inclusão de Análise exploratoria de dados (Jupyter notebook/Colab)
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/AR_04%20-%20Fast%20EDA%20Canvas_AL.png)
 <br>
 <br>
 
 ### 6 Mapa de ETL
 <br>
-Inclusão do Mapa de ETL
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/AR_0e%20-%20Fast%20ETL%20Canvas_AL.png)
 <br>
 <br>
      
 ### 7	MODELO CONCEITUAL, LOGICO E FISICO - OLTP<br>
-<br>
-Inclusão dos Modelos OLTP
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/OLTP-CONCEITUAL.png)
 <br>
 <br>
 
 ### 8	MODELO CONCEITUAL, LOGICO E FISICO - OLAP<br>
-
 <br>
-Inclusão dos Modelos OLAP
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/OLAP-CONCEITUAL.png)
 TABELAS DIMENSÃO, FATO, MEDIDAS E MÉTRICAS
 Implementação de no mínimo 3 dimensões e 1 fato presentes no Mapa de ETL
 <br>
