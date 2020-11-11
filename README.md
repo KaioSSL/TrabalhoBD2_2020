@@ -15,41 +15,23 @@ Base escolhida do Site Kaggle.
 Brazilian E-Commerce Public Dataset by Olist -URL https://www.kaggle.com/olistbr/brazilian-ecommerce<br>
 
 ### 3 Fast Imersion Canvas <br>
-![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/Fast%20Immersion%20Canvas%20-%20E-commerce%20Brazil.png)
-<br>
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/Fast%20Immersion%20Canvas%20-%20E-commerce%20Brazil.png)<br>
 
-<br>
-### 4 Fast Modelling Canvas
-<br>
-![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/AR_03b%20-%20Fast%20Modelling%20Canvas_AL.png)
-<br>
-<br>
+### 4 Fast Modelling Canvas<br>
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/AR_03b%20-%20Fast%20Modelling%20Canvas_AL.png)<br>
 
-### 5 Fast EDA Canvas
-<br>
-![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/AR_04%20-%20Fast%20EDA%20Canvas_AL.png)
-<br>
-<br>
+### 5 Fast EDA Canvas<br>
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/AR_04%20-%20Fast%20EDA%20Canvas_AL.png)<br>
 
-### 6 Mapa de ETL
-<br>
-![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/AR_0e%20-%20Fast%20ETL%20Canvas_AL.png)
-<br>
-<br>
+### 6 Mapa de ETL<br>
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/AR_0e%20-%20Fast%20ETL%20Canvas_AL.png)<br>
      
 ### 7	MODELO CONCEITUAL, LOGICO E FISICO - OLTP<br>
-![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/OLTP-CONCEITUAL.png)
-<br>
-<br>
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/OLTP-CONCEITUAL.png)<br>
 
 ### 8	MODELO CONCEITUAL, LOGICO E FISICO - OLAP<br>
-<br>
-![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/OLAP-CONCEITUAL.png)
-TABELAS DIMENSÃO, FATO, MEDIDAS E MÉTRICAS
-Implementação de no mínimo 3 dimensões e 1 fato presentes no Mapa de ETL
-<br>
-<br>
- 
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/OLAP-CONCEITUAL.png)<br>
+
 ### 9 CARGA DE DADOS,ANÁLISE DE METADADOS,ESTATISTICAS, SIZING E INDEXAÇÃO
 #### 9.1	CARGA DE DADOS A ANÁLISE DOS RESULTADOS OBTIDOS
 <br>
