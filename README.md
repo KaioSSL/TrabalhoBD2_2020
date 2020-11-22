@@ -12,29 +12,38 @@ Kaio Fabio - 20182BSI0485<br>
 
 ### 2	Escolha da base de dados e explicação sobre informações relacionadas <br>
 Base escolhida do Site Kaggle.
+
+Este conjunto de dados foi generosamente fornecido pela Olist, a maior loja de departamentos no mercado brasileiro. A Olist conecta pequenas empresas de todo o Brasil a canais sem complicações e com um único contrato. Esses comerciantes podem vender seus produtos através da Olist Store e enviá-los diretamente aos clientes usando os parceiros de logística Olist.
+Depois que um cliente compra o produto na Olist Store, um vendedor é notificado para atender a esse pedido. Assim que o cliente recebe o produto, ou a data estimada de entrega está vencida, o cliente recebe por e-mail uma pesquisa de satisfação onde pode dar uma nota sobre a experiência de compra e escrever alguns comentários.
+
 Brazilian E-Commerce Public Dataset by Olist -URL https://www.kaggle.com/olistbr/brazilian-ecommerce<br>
 
 ### 3 Fast Imersion Canvas <br>
 Inclusão do Fast Imersion Canvas
 ![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/Fast%20Immersion%20Canvas%20-%20E-commerce%20Brazil.png)
+Link: https://docs.google.com/presentation/d/18WK_3QXJ4UdTJVGzuaaDKdUvGlMRrjsr4doKVj6fWzc/edit?usp=sharing
 <br>
 
 <br>
 ### 4 Fast Modelling Canvas
 <br>
 Inclusão do Fast Modelling Canvas
+Link : https://docs.google.com/presentation/d/1JTXSsGTSYdnxfYHVpME0qgovd8wHGXyNNH1Yf-liFMQ/edit?usp=sharing
 <br>
 <br>
 
 ### 5 Fast EDA Canvas
 <br>
 Inclusão do Fast EDA Canvas + Inclusão de Análise exploratoria de dados (Jupyter notebook/Colab)
+
+Colab Link : https://colab.research.google.com/drive/1kNmaxnsgNglEAneO0hCMf0ngMbJORnbG?usp=sharing
 <br>
 <br>
 
 ### 6 Mapa de ETL
 <br>
 Inclusão do Mapa de ETL
+Colab Link : https://docs.google.com/presentation/d/1O1Psop_Yfs32HV6AB0J7ndgiW_a2sgooj21l17PfCFo/edit?usp=sharing
 <br>
 <br>
      
