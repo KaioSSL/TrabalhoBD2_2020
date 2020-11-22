@@ -19,7 +19,7 @@ Depois que um cliente compra o produto na Olist Store, um vendedor é notificado
 Brazilian E-Commerce Public Dataset by Olist -URL https://www.kaggle.com/olistbr/brazilian-ecommerce<br>
 
 ### 3 Fast Imersion Canvas <br>
-Inclusão do Fast Imersion Canvas
+Inclusão do Fast Imersion Canvas<br>
 ![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/Fast%20Immersion%20Canvas%20-%20E-commerce%20Brazil.png)<br>
 Link: https://docs.google.com/presentation/d/18WK_3QXJ4UdTJVGzuaaDKdUvGlMRrjsr4doKVj6fWzc/edit?usp=sharing<br>
 <br>
