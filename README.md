@@ -19,11 +19,19 @@ Depois que um cliente compra o produto na Olist Store, um vendedor é notificado
 Brazilian E-Commerce Public Dataset by Olist -URL https://www.kaggle.com/olistbr/brazilian-ecommerce<br>
 
 ### 3 Fast Imersion Canvas <br>
+<<<<<<< .mine
 Inclusão do Fast Imersion Canvas
 ![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/Fast%20Immersion%20Canvas%20-%20E-commerce%20Brazil.png)
 Link: https://docs.google.com/presentation/d/18WK_3QXJ4UdTJVGzuaaDKdUvGlMRrjsr4doKVj6fWzc/edit?usp=sharing
 <br>
+=======
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/Fast%20Immersion%20Canvas%20-%20E-commerce%20Brazil.png)<br>
 
+
+
+>>>>>>> .theirs
+
+<<<<<<< .mine
 <br>
 ### 4 Fast Modelling Canvas
 <br>
@@ -31,7 +39,17 @@ Inclusão do Fast Modelling Canvas
 Link : https://docs.google.com/presentation/d/1JTXSsGTSYdnxfYHVpME0qgovd8wHGXyNNH1Yf-liFMQ/edit?usp=sharing
 <br>
 <br>
+=======
+### 4 Fast Modelling Canvas<br>
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/AR_03b%20-%20Fast%20Modelling%20Canvas_AL.png)<br>
 
+
+
+
+
+>>>>>>> .theirs
+
+<<<<<<< .mine
 ### 5 Fast EDA Canvas
 <br>
 Inclusão do Fast EDA Canvas + Inclusão de Análise exploratoria de dados (Jupyter notebook/Colab)
@@ -39,29 +57,38 @@ Inclusão do Fast EDA Canvas + Inclusão de Análise exploratoria de dados (Jupy
 Colab Link : https://colab.research.google.com/drive/1kNmaxnsgNglEAneO0hCMf0ngMbJORnbG?usp=sharing
 <br>
 <br>
+=======
+### 5 Fast EDA Canvas<br>
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/AR_04%20-%20Fast%20EDA%20Canvas_AL.png)<br>
 
+
+
+
+
+>>>>>>> .theirs
+
+<<<<<<< .mine
 ### 6 Mapa de ETL
 <br>
 Inclusão do Mapa de ETL
 Colab Link : https://docs.google.com/presentation/d/1O1Psop_Yfs32HV6AB0J7ndgiW_a2sgooj21l17PfCFo/edit?usp=sharing
 <br>
 <br>
+=======
+### 6 Mapa de ETL<br>
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/AR_0e%20-%20Fast%20ETL%20Canvas_AL.png)<br>
+
+
+
+
+>>>>>>> .theirs
      
 ### 7	MODELO CONCEITUAL, LOGICO E FISICO - OLTP<br>
-<br>
-Inclusão dos Modelos OLTP
-<br>
-<br>
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/OLTP-CONCEITUAL.png)<br>
 
 ### 8	MODELO CONCEITUAL, LOGICO E FISICO - OLAP<br>
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/OLAP-CONCEITUAL.png)<br>
 
-<br>
-Inclusão dos Modelos OLAP
-TABELAS DIMENSÃO, FATO, MEDIDAS E MÉTRICAS
-Implementação de no mínimo 3 dimensões e 1 fato presentes no Mapa de ETL
-<br>
-<br>
- 
 ### 9 CARGA DE DADOS,ANÁLISE DE METADADOS,ESTATISTICAS, SIZING E INDEXAÇÃO
 #### 9.1	CARGA DE DADOS A ANÁLISE DOS RESULTADOS OBTIDOS
 <br>
