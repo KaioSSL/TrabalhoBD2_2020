@@ -20,8 +20,8 @@ Brazilian E-Commerce Public Dataset by Olist -URL https://www.kaggle.com/olistbr
 
 ### 3 Fast Imersion Canvas <br>
 Inclusão do Fast Imersion Canvas
-![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/Fast%20Immersion%20Canvas%20-%20E-commerce%20Brazil.png)
-Link: https://docs.google.com/presentation/d/18WK_3QXJ4UdTJVGzuaaDKdUvGlMRrjsr4doKVj6fWzc/edit?usp=sharing
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/Fast%20Immersion%20Canvas%20-%20E-commerce%20Brazil.png)<br>
+Link: https://docs.google.com/presentation/d/18WK_3QXJ4UdTJVGzuaaDKdUvGlMRrjsr4doKVj6fWzc/edit?usp=sharing<br>
 <br>
 
 <br>
@@ -29,7 +29,7 @@ Link: https://docs.google.com/presentation/d/18WK_3QXJ4UdTJVGzuaaDKdUvGlMRrjsr4d
 <br>
 Inclusão do Fast Modelling Canvas<br>
 ![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/AR_03b%20-%20Fast%20Modelling%20Canvas_AL.png)<br>
-Link : https://docs.google.com/presentation/d/1JTXSsGTSYdnxfYHVpME0qgovd8wHGXyNNH1Yf-liFMQ/edit?usp=sharing
+Link : https://docs.google.com/presentation/d/1JTXSsGTSYdnxfYHVpME0qgovd8wHGXyNNH1Yf-liFMQ/edit?usp=sharing<br>
 <br>
 <br>
 
@@ -37,7 +37,7 @@ Link : https://docs.google.com/presentation/d/1JTXSsGTSYdnxfYHVpME0qgovd8wHGXyNN
 <br>
 Inclusão do Fast EDA Canvas + Inclusão de Análise exploratoria de dados (Jupyter notebook/Colab)<br>
 ![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/AR_04%20-%20Fast%20EDA%20Canvas_AL.png)<br>
-Colab Link : https://colab.research.google.com/drive/1kNmaxnsgNglEAneO0hCMf0ngMbJORnbG?usp=sharing
+Colab Link : https://colab.research.google.com/drive/1kNmaxnsgNglEAneO0hCMf0ngMbJORnbG?usp=sharing<br>
 <br>
 <br>
 
@@ -45,7 +45,7 @@ Colab Link : https://colab.research.google.com/drive/1kNmaxnsgNglEAneO0hCMf0ngMb
 <br>
 Inclusão do Mapa de ETL<br>
 ![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/AR_0e%20-%20Fast%20ETL%20Canvas_AL.png)<br>
-Colab Link : https://docs.google.com/presentation/d/1O1Psop_Yfs32HV6AB0J7ndgiW_a2sgooj21l17PfCFo/edit?usp=sharing
+Colab Link : https://docs.google.com/presentation/d/1O1Psop_Yfs32HV6AB0J7ndgiW_a2sgooj21l17PfCFo/edit?usp=sharing<br>
 <br>
 <br>
      
