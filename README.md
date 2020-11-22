@@ -26,7 +26,6 @@ Link : https://docs.google.com/presentation/d/1JTXSsGTSYdnxfYHVpME0qgovd8wHGXyNN
 Colab Link : https://colab.research.google.com/drive/1kNmaxnsgNglEAneO0hCMf0ngMbJORnbG?usp=sharing<br>
 ### 6 Mapa de ETL<br>
 ![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/AR_0e%20-%20Fast%20ETL%20Canvas_AL.png)<br>
-Colab Link : https://docs.google.com/presentation/d/1O1Psop_Yfs32HV6AB0J7ndgiW_a2sgooj21l17PfCFo/edit?usp=sharing<br>     
 ### 7	MODELO CONCEITUAL, LOGICO E FISICO - OLTP<br>
 ![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/OLTP-CONCEITUAL.png)<br>
 
