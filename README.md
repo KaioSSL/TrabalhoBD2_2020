@@ -38,9 +38,9 @@ Principais Dimensões:<br>
 Data :<br>
 ![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/DIM_DATA_PENTAHO.PNG)<br>
 Produto :<br>
-![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/DIM_PRODUTO_PENTAHO.png)<br>
->Local :<br>
-![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/DIM_LOCAL_PENTAHO.png)<br>
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/DIM_PRODUTO_PENTAHO.PNG)<br>
+Local :<br>
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/DIM_LOCAL_PENTAHO.PNG)<br>
 Link documento explicativo dos processo realizados:https://docs.google.com/document/d/10P-9CpU-cArLYBqLjd8uA1Ug5uGiJo172LqlwxHtbYw/edit?usp=sharing
 
 
