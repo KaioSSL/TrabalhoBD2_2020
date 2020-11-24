@@ -34,14 +34,13 @@ Colab Link : https://colab.research.google.com/drive/1kNmaxnsgNglEAneO0hCMf0ngMb
 
 ### 9 CARGA DE DADOS,ANÁLISE DE METADADOS,ESTATISTICAS, SIZING E INDEXAÇÃO<br>
 #### 9.1	CARGA DE DADOS A ANÁLISE DOS RESULTADOS OBTIDOS<br>
-<br>
 Principais Dimensões:<br>
-<br>Data :<br>
-<br>![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/DIM_DATA_PENTAHO.png)<br>
-<br>Produto :<br>
-<br>![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/DIM_PRODUTO_PENTAHO.png)<br>
-<br>Local :<br>
-<br>![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/DIM_LOCAL_PENTAHO.png)<br>
+Data :<br>
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/DIM_DATA_PENTAHO.PNG)<br>
+Produto :<br>
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/DIM_PRODUTO_PENTAHO.png)<br>
+>Local :<br>
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/DIM_LOCAL_PENTAHO.png)<br>
 Link documento explicativo dos processo realizados:https://docs.google.com/document/d/10P-9CpU-cArLYBqLjd8uA1Ug5uGiJo172LqlwxHtbYw/edit?usp=sharing
 
 
