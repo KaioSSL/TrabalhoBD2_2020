@@ -32,8 +32,8 @@ Colab Link : https://colab.research.google.com/drive/1kNmaxnsgNglEAneO0hCMf0ngMb
 ### 8	MODELO CONCEITUAL, LOGICO E FISICO - OLAP<br>
 ![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/OLAP-CONCEITUAL.png)<br>
 
-### 9 CARGA DE DADOS,ANÁLISE DE METADADOS,ESTATISTICAS, SIZING E INDEXAÇÃO
-#### 9.1	CARGA DE DADOS A ANÁLISE DOS RESULTADOS OBTIDOS
+### 9 CARGA DE DADOS,ANÁLISE DE METADADOS,ESTATISTICAS, SIZING E INDEXAÇÃO<br>
+#### 9.1	CARGA DE DADOS A ANÁLISE DOS RESULTADOS OBTIDOS<br>
 <br>
 Principais Dimensões:<br>
 <br>Data :<br>
