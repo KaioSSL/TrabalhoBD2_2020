@@ -47,8 +47,8 @@ Segue código da procedure responsável por popular as tabelas do modelo OLTP.<b
 <br>
 Com a base OLTP criada, agora é possível realizar o processo de criação da base OLAP, realizando todos os processos e cortes necessários. Para isso, foi criada uma procedure para cada dimensão.<br>
 Segue abaixo, a procedure responsável por popular a tabela fato do sistema.<br>
-<br>
-![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/CREATE_DIM_VENDA_PROCEDURE.PNG)<br>
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/CREATE_DIM_VENDA_PROCEDURE.PNG)
+
 <br>
 
 
