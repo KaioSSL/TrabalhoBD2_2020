@@ -62,6 +62,7 @@ BEGIN
 	DELETE FROM "OLTP".ITEM_PRODUTO;
 	COPY "OLTP".Item_produto FROM 'C:\Users\kaiof\Desktop\2020_IFES\BD2\Trabalho\Base OLIST\olist_order_items_dataset.csv' USING DELIMITERS ',' CSV HEADER;
 END;$$;
+#markdown/
 <br>
 --
 <br>
@@ -133,7 +134,7 @@ BEGIN
 	END LOOP;
 	CLOSE CUR_VENDA;
 END;$$;
-
+#markdown/
 <br>Link das demais Procedures do Projeto:https://github.com/KaioSSL/TrabalhoBD2_2020/tree/main/procedures<br>
 ##   MARCO DE ENTREGA PARTE 01 (Até item 9.1)
 
