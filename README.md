@@ -41,99 +41,16 @@ Inicialmente, o projeto foi dividido em duas partes, A base de dados OLTP, e a b
 que realmente seriam utilizadas. Após isso, foi realizada a implementação das tabelas dentro do banco e logo depois é chamada uma procedure responsável por ler todos os arquivos csvs, e alocar em sua determinada tabela.<br>
 Segue código da procedure responsável por popular as tabelas do modelo OLTP.<br>
 <br>
-
-CREATE OR REPLACE PROCEDURE "OLTP".READ_CSV_TO_OLTP_BS()
-	LANGUAGE PLPGSQL AS
-$$
-DECLARE
-BEGIN
-	DELETE FROM "OLTP".GEOLOCATION;
-	COPY "OLTP".Geolocation FROM 'C:\Users\kaiof\Desktop\2020_IFES\BD2\Trabalho\Base OLIST\olist_geolocation_dataset.csv' USING DELIMITERS ',' CSV HEADER;
-	DELETE FROM "OLTP".CLIENTE;
-	COPY "OLTP".Cliente FROM 'C:\Users\kaiof\Desktop\2020_IFES\BD2\Trabalho\Base OLIST\olist_customers_dataset.csv' USING DELIMITERS ',' CSV HEADER;
-	DELETE FROM "OLTP".PEDIDO;
-	COPY "OLTP".Pedido FROM 'C:\Users\kaiof\Desktop\2020_IFES\BD2\Trabalho\Base OLIST\olist_orders_dataset.csv' USING DELIMITERS ',' CSV HEADER;
-	DELETE FROM "OLTP".PAGAMENTO;
-	COPY "OLTP".Pagamento FROM 'C:\Users\kaiof\Desktop\2020_IFES\BD2\Trabalho\Base OLIST\olist_order_payments_dataset.csv' USING DELIMITERS ',' CSV HEADER;
-	DELETE FROM "OLTP".PRODUTO;
-	COPY "OLTP".Produto FROM 'C:\Users\kaiof\Desktop\2020_IFES\BD2\Trabalho\Base OLIST\olist_products_dataset.csv' USING DELIMITERS ',' CSV HEADER;
-	DELETE FROM "OLTP".VENDEDOR;
-	COPY "OLTP".Vendedor FROM 'C:\Users\kaiof\Desktop\2020_IFES\BD2\Trabalho\Base OLIST\olist_sellers_dataset.csv' USING DELIMITERS ',' CSV HEADER;
-	DELETE FROM "OLTP".ITEM_PRODUTO;
-	COPY "OLTP".Item_produto FROM 'C:\Users\kaiof\Desktop\2020_IFES\BD2\Trabalho\Base OLIST\olist_order_items_dataset.csv' USING DELIMITERS ',' CSV HEADER;
-END;$$;
-
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/READ_CSV_PROCEDURE.png)<br>
 <br>
 --
 <br>
 Com a base OLTP criada, agora é possível realizar o processo de criação da base OLAP, realizando todos os processos e cortes necessários. Para isso, foi criada uma procedure para cada dimensão.<br>
 Segue abaixo, a procedure responsável por popular a tabela fato do sistema.<br>
+<br>
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/CREATE_DIM_VENDA_PROCEDURE.png)<br>
+<br>
 
-CREATE OR REPLACE PROCEDURE "OLAP".CREATE_DIM_VENDA()
-	LANGUAGE PLPGSQL AS
-$$
-DECLARE
-	CVENDA RECORD;
-	CUR_VENDA CURSOR FOR
-		SELECT	PEDIDO.ID_PEDIDO AS ID_VENDA,
-				ITEM_PRODUTO.PRICE AS VALOR_PRODUTO,
-				ITEM_PRODUTO.FRETE AS VALOR_FRETE,
-				COALESCE(ITEM_PRODUTO.PRICE,0) + COALESCE(ITEM_PRODUTO.FRETE,0) AS VALOR_VENDA,
-				DATA_PEDIDO.ID_DATA AS DATA_COMPRA,
-				DATA_APROVACAO.ID_DATA AS DATA_APROVACAO,
-				DATA_ENVIO.ID_DATA AS DATA_ENVIO,
-				DATA_CHEGADA.ID_DATA AS DATA_CHEGADA,
-				DATA_ESTIMADA.ID_DATA AS DATA_ESTIMADA,
-				ITEM_PRODUTO.ID_PRODUTO,
-				CLIENTE.CEP AS CEP_CLIENTE,
-				VENDEDOR.CEP AS CEP_VENDEDOR
-		FROM "OLTP".PEDIDO 
-			LEFT JOIN "OLAP".DIM_DATA AS DATA_APROVACAO ON (DATE_TRUNC('day',PEDIDO.DAT_APROV) = DATA_APROVACAO.DATA_FULL)
-			LEFT JOIN "OLAP".DIM_DATA AS DATA_PEDIDO ON (DATE_TRUNC('day',PEDIDO.DAT_PEDIDO)= DATA_PEDIDO.DATA_FULL)
-			LEFT JOIN "OLAP".DIM_DATA AS DATA_ENVIO ON (DATE_TRUNC('day',PEDIDO.DAT_ENVIO) = DATA_ENVIO.DATA_FULL)
-			LEFT JOIN "OLAP".DIM_DATA AS DATA_CHEGADA ON (DATE_TRUNC('day',PEDIDO.DAT_CHEGADA) = DATA_CHEGADA.DATA_FULL)
-			LEFT JOIN "OLAP".DIM_DATA AS DATA_ESTIMADA ON (DATE_TRUNC('day',PEDIDO.DATA_ESTIMADA) = DATA_ESTIMADA.DATA_FULL),
-			 "OLTP".ITEM_PRODUTO,
-			 "OLTP".CLIENTE,
-			 "OLTP".VENDEDOR
-		WHERE PEDIDO.ID_PEDIDO = ITEM_PRODUTO.ID_PEDIDO
-			  AND ITEM_PRODUTO.ID_VENDEDOR = VENDEDOR.ID_VENDEDOR
-			  AND PEDIDO.ID_CLIENTE = CLIENTE.ID_CLIENTE;
-			  
-BEGIN
-	DELETE FROM "OLAP".DIM_VENDA;
-	OPEN CUR_VENDA;
-	LOOP
-		FETCH CUR_VENDA INTO CVENDA;
-		EXIT WHEN NOT FOUND;
-		
-		INSERT INTO "OLAP".DIM_VENDA(ID_VENDA,
-						  VALOR_PRODUTO,
-						  VALOR_FRETE,
-						  VALOR_VENDA,
-						  DATA_COMPRA,
-						  DATA_APROVACAO,
-						  DATA_ENVIO,
-						  DATA_CHEGADA,
-						  DATA_ESTIMADA,
-						  ID_PRODUTO,
-						  CEP_CLIENTE,
-						  CEP_VENDEDOR)						  						  
-					VALUES(CVENDA.ID_VENDA,
-						   CVENDA.VALOR_PRODUTO,
-						   CVENDA.VALOR_FRETE,
-						   CVENDA.VALOR_VENDA,
-						   CVENDA.DATA_COMPRA,
-						   CVENDA.DATA_APROVACAO,
-						   CVENDA.DATA_ENVIO,
-						   CVENDA.DATA_CHEGADA,
-						   CVENDA.DATA_ESTIMADA,
-						   CVENDA.ID_PRODUTO,
-						   CVENDA.CEP_CLIENTE,
-						   CVENDA.CEP_VENDEDOR);
-	END LOOP;
-	CLOSE CUR_VENDA;
-END;$$;
 
 <br>Link das demais Procedures do Projeto:https://github.com/KaioSSL/TrabalhoBD2_2020/tree/main/procedures<br>
 ##   MARCO DE ENTREGA PARTE 01 (Até item 9.1)
