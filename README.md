@@ -12,6 +12,10 @@ Kaio Fabio - 20182BSI0485<br>
 
 ### 2	Escolha da base de dados e explicação sobre informações relacionadas <br>
 Base escolhida do Site Kaggle.
+
+Este conjunto de dados foi generosamente fornecido pela Olist, a maior loja de departamentos no mercado brasileiro. A Olist conecta pequenas empresas de todo o Brasil a canais sem complicações e com um único contrato. Esses comerciantes podem vender seus produtos através da Olist Store e enviá-los diretamente aos clientes usando os parceiros de logística Olist.
+Depois que um cliente compra o produto na Olist Store, um vendedor é notificado para atender a esse pedido. Assim que o cliente recebe o produto, ou a data estimada de entrega está vencida, o cliente recebe por e-mail uma pesquisa de satisfação onde pode dar uma nota sobre a experiência de compra e escrever alguns comentários.
+
 Brazilian E-Commerce Public Dataset by Olist -URL https://www.kaggle.com/olistbr/brazilian-ecommerce<br>
 
 ### 3 Fast Imersion Canvas <br>
@@ -41,14 +45,14 @@ Inicialmente, o projeto foi dividido em duas partes, A base de dados OLTP, e a b
 que realmente seriam utilizadas. Após isso, foi realizada a implementação das tabelas dentro do banco e logo depois é chamada uma procedure responsável por ler todos os arquivos csvs, e alocar em sua determinada tabela.<br>
 Segue código da procedure responsável por popular as tabelas do modelo OLTP.<br>
 <br>
-![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/READ_CSV_PROCEDURE.png)<br>
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/READ_CSV_PROCEDURE.PNG)<br>
 <br>
 --
 <br>
 Com a base OLTP criada, agora é possível realizar o processo de criação da base OLAP, realizando todos os processos e cortes necessários. Para isso, foi criada uma procedure para cada dimensão.<br>
 Segue abaixo, a procedure responsável por popular a tabela fato do sistema.<br>
 <br>
-![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/CREATE_DIM_VENDA_PROCEDURE.png)<br>
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/CREATE_DIM_VENDA_PROCEDURE.PNG)<br>
 <br>
 
 
