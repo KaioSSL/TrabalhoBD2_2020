@@ -44,15 +44,14 @@ A carga de dados foi feita completamente via PLPGSQL, modularizando os processos
 Inicialmente, o projeto foi dividido em duas partes, A base de dados OLTP, e a base de dados OLAP. Inicialmente, foi realizado alguns cortes da base de dados originais, visando manter somente as tabelas
 que realmente seriam utilizadas. Após isso, foi realizada a implementação das tabelas dentro do banco e logo depois é chamada uma procedure responsável por ler todos os arquivos csvs, e alocar em sua determinada tabela.<br>
 Segue código da procedure responsável por popular as tabelas do modelo OLTP.<br>
-<br>
 ![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/READ_CSV_PROCEDURE.PNG)<br>
 <br>
 --
 <br>
 Com a base OLTP criada, agora é possível realizar o processo de criação da base OLAP, realizando todos os processos e cortes necessários. Para isso, foi criada uma procedure para cada dimensão.<br>
 Segue abaixo, a procedure responsável por popular a tabela fato do sistema.<br>
-<br>
 ![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/CREATE_DIM_VENDA_PROCEDURE.PNG)<br>
+
 <br>
 
 
