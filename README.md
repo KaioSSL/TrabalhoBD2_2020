@@ -41,7 +41,7 @@ Inicialmente, o projeto foi dividido em duas partes, A base de dados OLTP, e a b
 que realmente seriam utilizadas. Após isso, foi realizada a implementação das tabelas dentro do banco e logo depois é chamada uma procedure responsável por ler todos os arquivos csvs, e alocar em sua determinada tabela.<br>
 Segue código da procedure responsável por popular as tabelas do modelo OLTP.<br>
 <br>
-#markdown
+```
 CREATE OR REPLACE PROCEDURE "OLTP".READ_CSV_TO_OLTP_BS()
 	LANGUAGE PLPGSQL AS
 $$
@@ -62,13 +62,13 @@ BEGIN
 	DELETE FROM "OLTP".ITEM_PRODUTO;
 	COPY "OLTP".Item_produto FROM 'C:\Users\kaiof\Desktop\2020_IFES\BD2\Trabalho\Base OLIST\olist_order_items_dataset.csv' USING DELIMITERS ',' CSV HEADER;
 END;$$;
-#markdown/
+```
 <br>
 --
 <br>
 Com a base OLTP criada, agora é possível realizar o processo de criação da base OLAP, realizando todos os processos e cortes necessários. Para isso, foi criada uma procedure para cada dimensão.<br>
 Segue abaixo, a procedure responsável por popular a tabela fato do sistema.<br>
-#markdown
+````
 CREATE OR REPLACE PROCEDURE "OLAP".CREATE_DIM_VENDA()
 	LANGUAGE PLPGSQL AS
 $$
@@ -134,7 +134,7 @@ BEGIN
 	END LOOP;
 	CLOSE CUR_VENDA;
 END;$$;
-#markdown/
+```
 <br>Link das demais Procedures do Projeto:https://github.com/KaioSSL/TrabalhoBD2_2020/tree/main/procedures<br>
 ##   MARCO DE ENTREGA PARTE 01 (Até item 9.1)
 
