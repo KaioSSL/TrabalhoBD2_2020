@@ -61,11 +61,35 @@ Segue abaixo, a procedure responsável por popular a tabela fato do sistema.<br>
 
 #### 9.2	,ESTATISTICAS, SIZING<br>
 <br>
-Inclusão de análise das estatísticas e Sizing
+Utilizando o comando Pg_stats para realizar analise dos dados da base.
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/PG_STATS.PNG)<br>
 <br>
-<br>
+Sizing da Base OLAP e OLTP<br>
 
+
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/PG_SIZE.PNG)<br>
 #### 9.3	APLICAÇAO DE ÍNDICES E TESTES DE PERFORMANCE<br>
+Os indices foram criados sobre os seguintes atributos da base:
+	- Dia do Ano : Para otimizar a busca entre periodos do ano mais precisos.
+	- Semana do Ano : Para otimizar a busca entre feriados, eventos atípicos.
+	- CEP(DIM_LOCATION) : Para otimizar a busca no momento de Join das tabelas.
+	- CEP(Vendedor,Cliente): Auxiliar no momento de análise e busca da localização dos individuos.
+	- Categoria Produto: Realizar a distinção mais eficaz das categorias dos produtos.<br>
+	Todos indices utilizados são do Tipo BTree, pois são utilizados para intervalos, e este será o case default da maioria das consultas utilizadas.
+	
+Para realizar o teste de perfomance será utilizado a query com funcionamento idêntico ao grão definido inicialmente no projeto.
+Segue abaixo a query:
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/GRAO.PNG)<br>
+Atualmente, sem a aplicação dos índices, a query está levando em média 595,2 ms para ser executa e trazer os resultados obtidos.
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/sem_indice.PNG)<br>
+<br>
+Após o uso dos indices, surpreendemente, o tempo médio de execução do grão aumentou para 686,8 ms.<br>
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/com_indice.PNG)<br>
+
+Devido ao tamanho da base dados, as análises não retornam um tempo expressivo no uso de índice,
+o que mostra que por ser uma base "pequena", a aplicação de indices pode se tornar algo negativo.
+
+
     a) Lista de índices, tipos de índices com explicação de porque foram implementados nas consultas 
     b) Performance esperada VS Resultados obtidos
     c) Tabela de resultados comparando velocidades antes e depois da aplicação dos índices (constando velocidade esperada com planejamento, sem indice e com índice Vs velocidade de execucao real com índice e sem índice).
