@@ -79,8 +79,10 @@ Os indices foram criados sobre os seguintes atributos da base:
 	
 Para realizar o teste de perfomance será utilizado a query com funcionamento idêntico ao grão definido inicialmente no projeto.
 Segue abaixo a query:
+<br>
+
 ![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/GRAO.PNG)<br>
-Atualmente, sem a aplicação dos índices, a query está levando em média 595,2 ms para ser executa e trazer os resultados obtidos.
+Atualmente, sem a aplicação dos índices, a query está levando em média 595,2 ms para ser executa e trazer os resultados obtidos.<br>
 ![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/sem_indice.PNG)<br>
 <br>
 Após o uso dos indices, surpreendemente, o tempo médio de execução do grão aumentou para 686,8 ms.<br>
@@ -88,15 +90,6 @@ Após o uso dos indices, surpreendemente, o tempo médio de execução do grão 
 
 Devido ao tamanho da base dados, as análises não retornam um tempo expressivo no uso de índice,
 o que mostra que por ser uma base "pequena", a aplicação de indices pode se tornar algo negativo.
-
-
-    a) Lista de índices, tipos de índices com explicação de porque foram implementados nas consultas 
-    b) Performance esperada VS Resultados obtidos
-    c) Tabela de resultados comparando velocidades antes e depois da aplicação dos índices (constando velocidade esperada com planejamento, sem indice e com índice Vs velocidade de execucao real com índice e sem índice).
-    d) Escolher as consultas mais complexas para serem analisadas (consultas com menos de 2 joins não serão aceitas)
-    e) As imagens do Explain devem ser inclusas no trabalho, bem como explicações sobre os resultados obtidos.
-    f) Inclusão de tabela mostrando as 10 execuções, excluindo-se o maior e menor tempos para cada consulta e 
-    obtendo-se a media dos outros valores como resultado médio final.
 <br>
 
 #### 10 Backup do Banco de Dados<br>
