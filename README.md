@@ -95,7 +95,7 @@ Média Execução : Com Indice 523.0161, Sem Indice 543.0318
 Segue abaixo exemplo do resultado obtido ao se utilizar o comando Explain Analyse na query grão do sistema.<br>
 ![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/EXPLAIN_SEM_INDICE.PNG)<br>
 
-Segue abaixo execução do grão, emitindo os gráficos de execução com Explain do PostgreSQL.
+Segue abaixo execução do grão, emitindo os gráficos de execução com Explain do PostgreSQL.<br>
 ![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/Explain_Grao_graficos.PNG)<br>
 
 Uma das observações possíveis e pontos á serem discutidos, é que, o uso de indices pode aumentar o tempo de planejamento anterior á execução, pois demanda de maior análise para executar a consulta.
