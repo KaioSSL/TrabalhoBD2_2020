@@ -43,18 +43,17 @@ Colab Link : https://colab.research.google.com/drive/1kNmaxnsgNglEAneO0hCMf0ngMb
 A carga de dados foi feita completamente via PLPGSQL, modularizando os processos com procedures, para que o processo ficasse mais metódico e mais didático.
 Inicialmente, o projeto foi dividido em duas partes, A base de dados OLTP, e a base de dados OLAP. Inicialmente, foi realizado alguns cortes da base de dados originais, visando manter somente as tabelas
 que realmente seriam utilizadas. Após isso, foi realizada a implementação das tabelas dentro do banco e logo depois é chamada uma procedure responsável por ler todos os arquivos csvs, e alocar em sua determinada tabela.<br>
-Segue código da procedure responsável por popular as tabelas do modelo OLTP.<br>
+
+<br>Segue código da procedure responsável por popular as tabelas do modelo OLTP.<br>
 ![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/READ_CSV_PROCEDURE.PNG)<br>
 <br>
 --
 <br>
 Com a base OLTP criada, agora é possível realizar o processo de criação da base OLAP, realizando todos os processos e cortes necessários. Para isso, foi criada uma procedure para cada dimensão.<br>
-Segue abaixo, a procedure responsável por popular a tabela fato do sistema.<br>
+
+<br>Segue abaixo, a procedure responsável por popular a tabela fato do sistema.<br>
 ![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/CREATE_DIM_VENDA_PROCEDURE.PNG)<br>
-
 <br>
-
-
 <br>Link das demais Procedures do Projeto:https://github.com/KaioSSL/TrabalhoBD2_2020/tree/main/procedures<br>
 ##   MARCO DE ENTREGA PARTE 01 (Até item 9.1)
 
@@ -69,20 +68,19 @@ Sizing da Base OLAP e OLTP<br>
 
 ![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/PG_SIZE.PNG)<br>
 #### 9.3	APLICAÇAO DE ÍNDICES E TESTES DE PERFORMANCE<br>
-Os indices foram criados sobre os seguintes atributos da base:
-	- Dia do Ano : Para otimizar a busca entre periodos do ano mais precisos.
-	- Semana do Ano : Para otimizar a busca entre feriados, eventos atípicos.
-	- CEP(DIM_LOCATION) : Para otimizar a busca no momento de Join das tabelas.
-	- CEP(Vendedor,Cliente): Auxiliar no momento de análise e busca da localização dos individuos.
+Os indices foram criados sobre os seguintes atributos da base:<br>
+	- Dia do Ano : Para otimizar a busca entre periodos do ano mais precisos.<br>
+	- Semana do Ano : Para otimizar a busca entre feriados, eventos atípicos.<br>
+	- CEP(DIM_LOCATION) : Para otimizar a busca no momento de Join das tabelas.<br>
+	- CEP(Vendedor,Cliente): Auxiliar no momento de análise e busca da localização dos individuos.<br>
 	- Categoria Produto: Realizar a distinção mais eficaz das categorias dos produtos.<br>
 	Todos indices utilizados são do Tipo BTree, pois são utilizados para intervalos, e este será o case default da maioria das consultas utilizadas.
 	
 Para realizar o teste de perfomance será utilizado a query com funcionamento idêntico ao grão definido inicialmente no projeto.
-Segue abaixo a query:
-<br>
-
+<br>Segue abaixo a query:<br>
 ![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/GRAO.PNG)<br>
-Atualmente, sem a aplicação dos índices, a query está levando em média 595,2 ms para ser executa e trazer os resultados obtidos.(Sem Explain)<br>
+
+<br>Atualmente, sem a aplicação dos índices, a query está levando em média 595,2 ms para ser executa e trazer os resultados obtidos.(Sem Explain)<br>
 ![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/sem_indice.PNG)<br>
 <br>
 Tempo médio de execução do grão após os indices para 686,8 ms.(Sem Explain)<br>
