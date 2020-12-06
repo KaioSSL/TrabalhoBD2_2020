@@ -117,13 +117,13 @@ Após o Backup, realizei o processo de restore da base de dados no banco de back
 ![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/Restore.PNG)<br>
 
 ### 11 MINERAÇÃO DE DADOS
+O método de mineração escolhido foi a Regressão Linear, a regressão linear é basicamente uma reta traçada  a partir de uma relação em um digrama de dispersão. A Regressão linear é utilizada
+para prever determinado comportamento a partir de outras variaveis e/ou comportamento. Neste projeto, iremos aplicar a a regressão linear para prever qual a categoria de determinado produto baseado nas suas caracteristicas como:<br>
+Peso, Altura, Largura e Comprimento.
 
-* Explicação/Fundamentação teórica sobre o método, objetivos e restrições! (formato doc/odt ou PDF)
-* Onde/quando aplicar 
-> ##### Estudar e explicar artigo que aplique o método de mineração de dados/machine learning escolhido
-* exemplo de uso/aplicação 
-> ##### a) Implementar algoritmo de básico de exemplo obtido na literatura (enviar código executável junto do trabalho com detalhamento de explicação para uso passo a passo)
+Basicamente, a regressão linear é uma equação realizada para se estimar o valor/comportamento de uma variavel X dados os valores/comportamentos de outras variaveis.
 
+Segue link do notebook com exemplo de aplicação: https://colab.research.google.com/drive/1lI_XevDuFdE_h7uM8KKmIcWM5EaJ_jKZ?usp=sharing (Não consegui finalizar, pois estava recebendo um erro)
 Referência: http://scikit-learn.org/stable/index.html
 <br>
 Referências adicionais:
