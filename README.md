@@ -78,7 +78,7 @@ Os indices foram criados sobre os seguintes atributos da base:<br>
 	
 Para realizar o teste de perfomance será utilizado a query com funcionamento idêntico ao grão definido inicialmente no projeto.
 <br>Segue abaixo a query:<br>
-![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/GRAO.PNG)<br>
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/GR%C3%83O.PNG)<br>
 
 <br>Atualmente, sem a aplicação dos índices, a query está levando em média 595,2 ms para ser executa e trazer os resultados obtidos.(Sem Explain)<br>
 ![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/sem_indice.PNG)<br>
@@ -108,7 +108,7 @@ Para realizar o backup do projeto, foi utilizado o comando pg_dump.<br>
 Levou cerca de 1 hora para concluir o backup sem utilizar o comando --file nomeArquivo, após utilizar, o backup ocorreu em segundos..<br>
 ![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/BACKUP.PNG)<br>
 O arquivo possui aproximadamente 118 mb:<br>
-![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/BACKUP.PNG)<br>
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/ArquivoBackup.PNG)<br>
 Após o Backup, realizei o processo de restore da base de dados no banco de backup, o processo não levou mais que segundos, assim como o backup.<br>
 ![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/Restore.PNG)<br>
 
