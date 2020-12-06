@@ -89,10 +89,12 @@ Tempo médio de execução do grão após os indices para 686,8 ms.(Sem Explain)
 <br>
 Planilha com tempos obtidos nos testes utilizando explain analyse. Link : https://docs.google.com/spreadsheets/d/10YnZnZe-Z0wxUUeddSyPVc6drq_RcvcwP3P-8xsF21U/edit?usp=sharing <br>
 <br> Em média, a diferença nos tempos de execução não foi tão expressiva, diferente do tempo de planejamento.
-Média Planejamento: Com Indice 1.8432, Sem Indice 1.2581
-Média Execução : Com Indice 523.0161, Sem Indice 543.0318
+Média Planejamento: Com Indice 1.8432, Sem Indice 1.2581<br>
+Média Execução : Com Indice 523.0161, Sem Indice 543.0318<br>
 <br>
+
 Segue abaixo exemplo do resultado obtido ao se utilizar o comando Explain Analyse na query grão do sistema.<br>
+<br>
 ![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/EXPLAIN_SEM_INDICE.PNG)<br>
 
 Segue abaixo execução do grão, emitindo os gráficos de execução com Explain do PostgreSQL.<br>
