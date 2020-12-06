@@ -82,26 +82,37 @@ Segue abaixo a query:
 <br>
 
 ![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/GRAO.PNG)<br>
-Atualmente, sem a aplicação dos índices, a query está levando em média 595,2 ms para ser executa e trazer os resultados obtidos.<br>
+Atualmente, sem a aplicação dos índices, a query está levando em média 595,2 ms para ser executa e trazer os resultados obtidos.(Sem Explain)<br>
 ![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/sem_indice.PNG)<br>
 <br>
-Após o uso dos indices, surpreendemente, o tempo médio de execução do grão aumentou para 686,8 ms.<br>
+Tempo médio de execução do grão após os indices para 686,8 ms.(Sem Explain)<br>
 ![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/com_indice.PNG)<br>
 
-Devido ao tamanho da base dados, as análises não retornam um tempo expressivo no uso de índice,
-o que mostra que por ser uma base "pequena", a aplicação de indices pode se tornar algo negativo.
 <br>
+Planilha com tempos obtidos nos testes utilizando explain analyse. Link : https://docs.google.com/spreadsheets/d/10YnZnZe-Z0wxUUeddSyPVc6drq_RcvcwP3P-8xsF21U/edit?usp=sharing <br>
+<br> Em média, a diferença nos tempos de execução não foi tão expressiva, diferente do tempo de planejamento.
+Média Planejamento: Com Indice 1.8432, Sem Indice 1.2581
+Média Execução : Com Indice 523.0161, Sem Indice 543.0318
+<br>
+Segue abaixo exemplo do resultado obtido ao se utilizar o comando Explain Analyse na query grão do sistema.<br>
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/EXPLAIN_GRAO.PNG)<br>
+
+Segue abaixo execução do grão, emitindo os gráficos de execução com Explain do PostgreSQL.
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/EXPLAIN_GRAO.PNG)<br>
+
+Uma das observações possíveis e pontos á serem discutidos, é que, o uso de indices pode aumentar o tempo de planejamento anterior á execução, pois demanda de maior análise para executar a consulta.
+Mas também pode diminuir consideralvemente o tempo de execução da consulta utilizando suas técnicas de intervalos. É interessante pontuar que as diferenças não foram tão expressivas no projeto devido a quantidade registros,
+por isso, para bases pequenas, talvez não seja tão necessário o uso de indices.
+
 
 #### 10 Backup do Banco de Dados<br>
-        Detalhamento do backup.
-        a) Tempo
-        b) Tamanho
-        c) Teste de restauração (backup)
-        d) Tempo para restauração
-        e) Teste de restauração (script sql)
-        f) Tempo para restauração (script sql)
-<br>
-
+Para realizar o backup do projeto, foi utilizado o comando pg_dump.<br>
+Levou cerca de 1 hora para concluir o backup sem utilizar o comando --file nomeArquivo, após utilizar, o backup ocorreu em segundos..<br>
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/BACKUP.PNG)<br>
+O arquivo possui aproximadamente 118 mb:<br>
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/BACKUP.PNG)<br>
+Após o Backup, realizei o processo de restore da base de dados no banco de backup, o processo não levou mais que segundos, assim como o backup.<br>
+![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/Restore.PNG)<br>
 
 ### 11 MINERAÇÃO DE DADOS
 
