@@ -60,7 +60,8 @@ Com a base OLTP criada, agora é possível realizar o processo de criação da b
 
 #### 9.2	,ESTATISTICAS, SIZING<br>
 <br>
-Utilizando o comando Pg_stats para realizar analise dos dados da base.
+Utilizando o comando Pg_stats para realizar analise dos dados da base.<br>
+<br>
 ![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/PG_STATS.PNG)<br>
 <br>
 Sizing da Base OLAP e OLTP<br>
