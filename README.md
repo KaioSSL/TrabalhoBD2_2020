@@ -123,7 +123,14 @@ Peso, Altura, Largura e Comprimento.
 
 Basicamente, a regressão linear é uma equação realizada para se estimar o valor/comportamento de uma variavel X dados os valores/comportamentos de outras variaveis.
 
-Segue link do notebook com exemplo de aplicação: https://colab.research.google.com/drive/1lI_XevDuFdE_h7uM8KKmIcWM5EaJ_jKZ?usp=sharing (Não consegui finalizar, pois estava recebendo um erro)
+Utilizamos o algoritmo de regressão linear para tentar prever qual categoria um determinado produto iria se encaixar a partir de seus atributos peso, altura, largura e comprimento.
+Para tal, utilizamos a categorização já utilizada na base de dados, que possui 72 categorias, filtramos as 10 mais utilizadas para utilizar como base nos algoritmos.<br>
+Fizemos duas formas de regressão, utilizando a regressão com multiplos valores, utilizando as 10 classes como case target. E binarizamos as 10 classes em duas classes (Pessoa e Casa).
+Segue abaixo link dos dois notebooks.<br>
+Regressão Binária : https://colab.research.google.com/drive/1lI_XevDuFdE_h7uM8KKmIcWM5EaJ_jKZ?usp=sharing<br>
+Regressão Multipla: https://colab.research.google.com/drive/1lI_XevDuFdE_h7uM8KKmIcWM5EaJ_jKZ?usp=sharing<br>
+
+O processo realizado no notebook se autoexplica.
 Referência: http://scikit-learn.org/stable/index.html
 <br>
 Referências adicionais:
