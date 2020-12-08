@@ -117,18 +117,18 @@ Após o Backup, realizei o processo de restore da base de dados no banco de back
 ![texto](https://github.com/KaioSSL/TrabalhoBD2_2020/blob/main/Imagens/Restore.PNG)<br>
 
 ### 11 MINERAÇÃO DE DADOS
-O método de mineração escolhido foi a Regressão Linear, a regressão linear é basicamente uma reta traçada  a partir de uma relação em um digrama de dispersão. A Regressão linear é utilizada
-para prever determinado comportamento a partir de outras variaveis e/ou comportamento. Neste projeto, iremos aplicar a a regressão linear para prever qual a categoria de determinado produto baseado nas suas caracteristicas como:<br>
+O método de mineração escolhido foi a Regressão Logística, a regressão logística é basicamente uma reta traçada  a partir de uma relação em um digrama de dispersão. A Regressão Logística é utilizada
+para prever determinado comportamento a partir de outras variaveis e/ou comportamento. Neste projeto, iremos aplicar a a regressão logística para prever qual a categoria de determinado produto baseado nas suas caracteristicas como:<br>
 Peso, Altura, Largura e Comprimento.
 
-Basicamente, a regressão linear é uma equação realizada para se estimar o valor/comportamento de uma variavel X dados os valores/comportamentos de outras variaveis.
+Basicamente, a regressão logística é uma equação realizada para se estimar o valor/comportamento de uma variavel X dados os valores/comportamentos de outras variaveis.
 
-Utilizamos o algoritmo de regressão linear para tentar prever qual categoria um determinado produto iria se encaixar a partir de seus atributos peso, altura, largura e comprimento.
+Utilizamos o algoritmo de regressão logística para tentar prever qual categoria um determinado produto iria se encaixar a partir de seus atributos peso, altura, largura e comprimento.
 Para tal, utilizamos a categorização já utilizada na base de dados, que possui 72 categorias, filtramos as 10 mais utilizadas para utilizar como base nos algoritmos.<br>
 Fizemos duas formas de regressão, utilizando a regressão com multiplos valores, utilizando as 10 classes como case target. E binarizamos as 10 classes em duas classes (Pessoa e Casa).
 Segue abaixo link dos dois notebooks.<br>
-Regressão Binária : https://colab.research.google.com/drive/1lI_XevDuFdE_h7uM8KKmIcWM5EaJ_jKZ?usp=sharing<br>
-Regressão Multipla: https://colab.research.google.com/drive/1lI_XevDuFdE_h7uM8KKmIcWM5EaJ_jKZ?usp=sharing<br>
+Regressão Logística Binária : https://colab.research.google.com/drive/1lI_XevDuFdE_h7uM8KKmIcWM5EaJ_jKZ?usp=sharing<br>
+Regressão Logística Multipla: https://colab.research.google.com/drive/1lI_XevDuFdE_h7uM8KKmIcWM5EaJ_jKZ?usp=sharing<br>
 
 O processo realizado no notebook se autoexplica.
 Referência: http://scikit-learn.org/stable/index.html
